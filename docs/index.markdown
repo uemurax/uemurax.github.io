@@ -89,6 +89,12 @@ Abstract and Concrete Type Theories.
     June 25–26, 2016, Porto, Portugal.
     [slides](http://hott-uf.gforge.inria.fr/taichi.pdf)
 
+# Awards #
+
+*   Best Student Paper Award at
+    [International Conference on Homotopy Type Theory (HoTT 2019)](https://hott.github.io/HoTT-2019/),
+    August 12--17, 2019, Pittsburgh, USA.
+
 # Contact #
 
 See my [profile](https://www.su.se/profiles/taue1805-1.565619)
