@@ -8,6 +8,10 @@ layout: home
 I am a postdoc at the
 [Department of Mathematics](https://www.su.se/matematiska-institutionen/)
 at [Stockholm University](https://www.su.se/).
+My main research interests are in
+[Homotopy Type Theory](https://homotopytypetheory.org/),
+in particular its semantics using (higher) category theory.
+I am also interested in type theory in general and pure category theory.
 
 # Contact #
 
