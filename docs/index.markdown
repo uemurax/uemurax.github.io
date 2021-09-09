@@ -44,6 +44,42 @@ I am also interested in type theory in general and pure category theory.
 
 [andrew_swan]: https://sites.google.com/site/wakelinswan/
 
+# Talks #
+
+*   ∞-type theories.
+    [Workshop on Homotopy Type Theory/ Univalent Foundations](https://hott-uf.github.io/2020/),
+    July 5, 2020, Online.
+    [abstract](https://hott-uf.github.io/2020/HoTTUF_2020_paper_4.pdf)
+    [video](https://www.youtube.com/watch?v=DEchgzYw3qE)
+*   Abstract type theories.
+    [HoTTEST Conference 2020](https://www.uwo.ca/math/faculty/kapulkin/seminars/hottest_conference_2020.html),
+    June 17, 2020, Online.
+    [slides](https://www.uwo.ca/math/faculty/kapulkin/seminars/hottestfiles/Uemura-2020-06-17-HoTTEST.pdf)
+    [video](https://www.youtube.com/watch?v=8o8cEUxWAjE)
+*   Cubical Assembly Models of Homotopy Type Theory.
+    Invited talk at [HoTT-UF](https://cas.oslo.no/hott-uf/),
+    June 13, 2019, Oslo, Norway.
+*   A General Framework for the Semantics of Type Theory.
+    *   [International Conference on Homotopy Type Theory (HoTT 2019)](https://hott.github.io/HoTT-2019/),
+        August 16, 2019, Pittsburgh, USA.
+        [slides](https://hott.github.io/HoTT-2019//conf-slides/Uemura.pdf)
+    *   [Category Theory 2019](http://conferences.inf.ed.ac.uk/ct2019/),
+        July 9, 2019, Edinburgh, Scotland.
+        [slides](http://conferences.inf.ed.ac.uk/ct2019/slides/7.pdf)
+    *   [25th International Conference on Types for Proofs and Programs (TYPES 2019)](https://cas.oslo.no/types2019/),
+        June 11, 2019, Oslo, Norway.
+*   Cubical Assemblies and the Independence of the Propositional Resizing Axiom.
+    *   [Workshop on Homotopy Type Theory/ Univalent Foundations](https://hott-uf.github.io/2018/),
+        July 7-8, 2018, Oxford, United Kingdom.
+        [slides](https://hott-uf.github.io/2018/slides/UemuraHoTTUF2018.pdf)
+    *   [24th International Conference on Types for Proofs and Programs (TYPES 2018)](https://types2018.projj.eu/),
+        June 18-21, 2018, Braga, Portugal.
+        [slides](https://www.dropbox.com/sh/shr2fpv4r08pvj0/AABcV-C_-uUXsqO6Z95DSVLYa/Jun18?dl=0&preview=Uemura(abstract%25233).pdf)
+*   Fibred Fibration Categories.
+    [Workshop on Homotopy Type Theory / Univalent Foundations](http://hott-uf.gforge.inria.fr/),
+    June 25–26, 2016, Porto, Portugal.
+    [slides](http://hott-uf.gforge.inria.fr/taichi.pdf)
+
 # Contact #
 
 See my [profile](https://www.su.se/profiles/taue1805-1.565619)
