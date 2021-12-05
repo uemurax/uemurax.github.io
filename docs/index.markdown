@@ -53,6 +53,13 @@ Abstract and Concrete Type Theories.
 [abstract](https://www.illc.uva.nl/cms/publication/4949?showAbstract=1)
 [pdf](https://www.illc.uva.nl/cms/Research/Publications/Dissertations/DS-2021-09.text.pdf)
 
+## Notes ##
+
+*   [トポスと高階論理](pdfs/topos-and-hol.pdf)
+*   [Grothendieck ファイブレーション](pdfs/grothendieck-fibrations-ja.pdf)
+*   [ホモトピー型理論入門](pdfs/hott-intro-ja.pdf)
+*   [Functor Categories of a Locally Cartesian Closed Category](pdfs/functor-categories-of-lccc.pdf)
+
 # Talks #
 
 *   ∞-type theories and internal language conjecture.
