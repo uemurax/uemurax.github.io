@@ -55,6 +55,11 @@ Abstract and Concrete Type Theories.
 
 # Talks #
 
+*   ∞-type theories and internal language conjecture.
+    [Homotopy Type Theory Electronic Seminar Talks](https://uwo.ca/math/faculty/kapulkin/seminars/hottest.html),
+    December 2, 2021, Online.
+    [slides](https://uwo.ca/math/faculty/kapulkin/seminars/hottestfiles/Uemura-2021-12-02-HoTTEST.pdf)
+    [video](https://www.youtube.com/watch?v=DY42DgCxQls)
 *   ∞-type theories.
     [Workshop on Homotopy Type Theory/ Univalent Foundations](https://hott-uf.github.io/2020/),
     July 5, 2020, Online.
