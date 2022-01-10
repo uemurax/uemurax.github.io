@@ -63,6 +63,9 @@ Abstract and Concrete Type Theories.
 
 # Talks #
 
+*   Introduction to Homotopy Type Theory and Univalent Foundations of Mathematics.
+    [Logic Summer School](http://lss.cecs.anu.edu.au/),
+    December, 2021, Australian National University.
 *   ∞-type theories and internal language conjecture.
     [Homotopy Type Theory Electronic Seminar Talks](https://uwo.ca/math/faculty/kapulkin/seminars/hottest.html),
     December 2, 2021, Online.
