@@ -17,6 +17,10 @@ I am also interested in type theory in general and pure category theory.
 
 ## Publications ##
 
+*   The universal exponentiable arrow.
+    Journal of Pure and Applied Algebra,
+    Volume 226, Issue 7, 2022.
+    [doi:10.1016/j.jpaa.2021.106991](https://dx.doi.org/10.1016/j.jpaa.2021.106991)
 *   Cubical Assemblies, a Univalent and Impredicative Universe and a Failure of Propositional Resizing.
     [24th International Conference on Types for Proofs and Programs (TYPES 2018)](https://types2018.projj.eu/),
     2019.
@@ -29,9 +33,6 @@ I am also interested in type theory in general and pure category theory.
 
 ## Preprints ##
 
-*   The Universal Exponentiable Arrow.
-    2021.
-    [arXiv:2001.09940](https://arxiv.org/abs/2001.09940)
 *   On Church's Thesis in Cubical Assemblies (joint with [Andrew Swan][andrew_swan]).
     2019.
     [arXiv:1905.03014](https://arxiv.org/abs/1905.03014)
