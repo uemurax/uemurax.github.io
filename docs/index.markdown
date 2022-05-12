@@ -39,12 +39,17 @@ I am also interested in type theory in general and pure category theory.
 
 ## Preprints ##
 
+*   ∞-type theories (joint with [Hoang Kim Nguyen][hoang_kim_nguyen]).
+    2022.
+    [arxiv:2205.00798](https://arxiv.org/abs/2205.00798)
 *   A General Framework for the Semantics of Type Theory.
     2019.
     [arXiv:1904.04097](https://arxiv.org/abs/1904.04097)
 *   Homotopies for Free!
     2017.
     [arXiv:1701.07937](https://arxiv.org/abs/1701.07937)
+
+[hoang_kim_nguyen]: https://hk-nguyen-math.github.io/
 
 ## PhD Thesis ##
 
