@@ -17,6 +17,10 @@ I am also interested in type theory in general and pure category theory.
 
 ## Publications ##
 
+*   On Church's Thesis in Cubical Assemblies (joint with [Andrew Swan][andrew_swan]).
+    Mathematical Structures in Computer Science,
+    2022.
+    [doi:10.1017/S0960129522000068](https://dx.doi.org/10.1017/S0960129522000068)
 *   The universal exponentiable arrow.
     Journal of Pure and Applied Algebra,
     Volume 226, Issue 7, 2022.
@@ -31,19 +35,16 @@ I am also interested in type theory in general and pure category theory.
     [doi:10.1109/LICS.2017.8005084](http://dx.doi.org/10.1109/LICS.2017.8005084)
     [arXiv:1602.08206](https://arxiv.org/abs/1602.08206)
 
+[andrew_swan]: https://sites.google.com/site/wakelinswan/
+
 ## Preprints ##
 
-*   On Church's Thesis in Cubical Assemblies (joint with [Andrew Swan][andrew_swan]).
-    2019.
-    [arXiv:1905.03014](https://arxiv.org/abs/1905.03014)
 *   A General Framework for the Semantics of Type Theory.
     2019.
     [arXiv:1904.04097](https://arxiv.org/abs/1904.04097)
 *   Homotopies for Free!
     2017.
     [arXiv:1701.07937](https://arxiv.org/abs/1701.07937)
-
-[andrew_swan]: https://sites.google.com/site/wakelinswan/
 
 ## PhD Thesis ##
 
