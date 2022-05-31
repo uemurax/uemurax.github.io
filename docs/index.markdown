@@ -62,6 +62,8 @@ Abstract and Concrete Type Theories.
 
 ## Notes ##
 
+*   [A universal property of the (∞, 1)-category of presentable (∞, 1)-categories](pdfs/universal-property-of-pr.pdf)
+    Notes for the talk presented at [PSSL 106](http://www.math.muni.cz/~bourkej/PSSL106.html).
 *   [トポスと高階論理](pdfs/topos-and-hol.pdf)
 *   [Grothendieck ファイブレーション](pdfs/grothendieck-fibrations-ja.pdf)
 *   [ホモトピー型理論入門](pdfs/hott-intro-ja.pdf)
