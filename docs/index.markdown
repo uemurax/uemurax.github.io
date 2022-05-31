@@ -72,6 +72,7 @@ Abstract and Concrete Type Theories.
 *   Normalization for initial space-valued models of type theories.
     [EuroProofNet WG6 kick-off meeting: Syntax and Semantics of Type Theories](https://europroofnet.github.io/wg6-kickoff-stockholm/),
     May 21, 2022, Stockholm.
+    [slides](https://europroofnet.github.io/assets/wg6/stockholm-kickoff-slides/uemura-europroofnet-stockholm-slides.pdf)
 *   Introduction to Homotopy Type Theory and Univalent Foundations of Mathematics.
     [Logic Summer School](http://lss.cecs.anu.edu.au/),
     December, 2021, Australian National University.
