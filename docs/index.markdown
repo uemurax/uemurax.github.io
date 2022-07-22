@@ -72,8 +72,11 @@ Abstract and Concrete Type Theories.
 
 # Talks #
 
+*   Internal languages of diagrams of ∞-toposes.
+    Invited talk at [Workshop on Homotopy Type Theory/ Univalent Foundations](https://hott-uf.github.io/2022/),
+    July 31, 2022, Haifa.
 *   Normalization for initial space-valued models of type theories.
-    [EuroProofNet WG6 kick-off meeting: Syntax and Semantics of Type Theories](https://europroofnet.github.io/wg6-kickoff-stockholm/),
+    Invited talk at [EuroProofNet WG6 kick-off meeting: Syntax and Semantics of Type Theories](https://europroofnet.github.io/wg6-kickoff-stockholm/),
     May 21, 2022, Stockholm.
     [slides](https://europroofnet.github.io/assets/wg6/stockholm-kickoff-slides/uemura-europroofnet-stockholm-slides.pdf)
 *   Introduction to Homotopy Type Theory and Univalent Foundations of Mathematics.
