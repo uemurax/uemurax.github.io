@@ -57,8 +57,8 @@ Abstract and Concrete Type Theories.
 [Institute for Logic, Language and Computation](https://www.illc.uva.nl/),
 [University of Amsterdam](https://www.uva.nl/),
 9 July, 2021.
-[abstract](https://www.illc.uva.nl/cms/publication/4949?showAbstract=1)
-[pdf](https://www.illc.uva.nl/cms/Research/Publications/Dissertations/DS-2021-09.text.pdf)
+[abstract](https://www.illc.uva.nl/cms/publication/5287?showAbstract=1)
+[pdf](https://eprints.illc.uva.nl/id/document/12150)
 
 ## Notes ##
 
