@@ -39,9 +39,12 @@ I am also interested in type theory in general and pure category theory.
 
 ## Preprints ##
 
+*   Homotopy type theory as internal languages of diagrams of ∞-logoses.
+    2022.
+    [arXiv:2212.02444](https://arxiv.org/abs/2212.02444)
 *   ∞-type theories (joint with [Hoang Kim Nguyen][hoang_kim_nguyen]).
     2022.
-    [arxiv:2205.00798](https://arxiv.org/abs/2205.00798)
+    [arXiv:2205.00798](https://arxiv.org/abs/2205.00798)
 *   A General Framework for the Semantics of Type Theory.
     2019.
     [arXiv:1904.04097](https://arxiv.org/abs/1904.04097)
