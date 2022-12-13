@@ -3,3 +3,15 @@ layout: default
 ---
 
 # 「正しい」圏論
+
+## 参考文献
+
+*   Benedikt Ahrens, Krzysztof Kapulkin, and Michael Shulman.
+    "Univalent categories and the Rezk completion."
+    Mathematical Structures in Computer Science 25.5 (2015): 1010-1039.
+    [doi:10.1017/S0960129514000486](https://doi.org/10.1017/S0960129514000486)
+    [arXiv:1303.0584](https://arxiv.org/abs/1303.0584)
+*   The Univalent Foundations Program.
+    "Homotopy Type Theory: Univalent Foundations of Mathematics."
+    Institute for Advanced Study, 2013.
+    <https://homotopytypetheory.org/book/>
