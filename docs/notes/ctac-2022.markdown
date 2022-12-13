@@ -6,14 +6,20 @@ layout: default
 
 この文書は[圏論 Advent Calendar 2022](https://adventar.org/calendars/7888)の17日目の記事です。
 
+## 概要
+
+「正しい」圏の定義を紹介します。主に [(Ahrens et al., 2015)](#aks2015) と [HoTT Book](#hottbook) の9章の内容です。
+
 ## 参考文献
 
-*   Benedikt Ahrens, Krzysztof Kapulkin, and Michael Shulman.
+*   <span id="aks2015"></span>
+    Benedikt Ahrens, Krzysztof Kapulkin, and Michael Shulman.
     "Univalent categories and the Rezk completion."
     Mathematical Structures in Computer Science 25.5 (2015): 1010-1039.
     [doi:10.1017/S0960129514000486](https://doi.org/10.1017/S0960129514000486)
     [arXiv:1303.0584](https://arxiv.org/abs/1303.0584)
-*   The Univalent Foundations Program.
+*   <span id="hottbook"></span>
+    The Univalent Foundations Program.
     "Homotopy Type Theory: Univalent Foundations of Mathematics."
     Institute for Advanced Study, 2013.
     <https://homotopytypetheory.org/book/>
