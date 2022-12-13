@@ -4,6 +4,8 @@ layout: default
 
 # 「正しい」圏論
 
+この文書は[圏論 Advent Calendar 2022](https://adventar.org/calendars/7888)の17日目の記事です。
+
 ## 参考文献
 
 *   Benedikt Ahrens, Krzysztof Kapulkin, and Michael Shulman.
