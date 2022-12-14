@@ -37,7 +37,11 @@ layout: default
 
 ### 型
 
-Univalent Foundations は**依存型理論**をベースとします。このメタ理論では数学は**型**やその**要素**を**構成**することで営まれます。型とは素朴な意味で集合に近い概念で、その要素は集合の要素のようなものです。 `A` が型であることは `A : Type` と書き、 `a` が型 `A` の要素であることは `a : A` と書きます。型 `A` に対し、　**`A` 上の依存型**は `A` で添え字付けられた集合族のようなもので、 `B : A -> Type` のように書きます。
+Univalent Foundations は Martin-Löf の**依存型理論** [(Martin-Löf, 1975)](#ml1975) をベースとします。このメタ理論では数学は**型**やその**要素**を**構成**することで営まれます。命題という概念は組み込まれていません。型とは素朴な意味で集合に近い概念で、その要素は集合の要素のようなものです。 `A` が型であることは `A : Type` と書き、 `a` が型 `A` の要素であることは `a : A` と書きます。型 `A` に対し、　**`A` 上の依存型**は `A` で添え字付けられた集合族のようなもので、 `B : A -> Type` のように書きます。
+
+### 同一視の型
+
+型 `A` とその要素 `a : A` と `b : A` に対し、**同一視の型 (identity type)** `a = b` が構成できます。もともとの気持ちは `a` と `b` が等しいという命題だったのですが、 Univalent Foundations の文脈では `a = b` の要素は `a` と `b` の**同一視のしかた**と考えます。普通の等式と違って **`a = b` は複数の異なる要素を持ちえます**。普通の等式と同様に、**あらゆる構成は同一視を保ちます**。例えば関数 `f : A -> B` と `a : A` と `b : A` に対し、関数 `ap f : a = b -> f a = f b` が誘導されます。
 
 ## 参考文献
 
@@ -52,3 +56,8 @@ Univalent Foundations は**依存型理論**をベースとします。このメ
     "Homotopy Type Theory: Univalent Foundations of Mathematics."
     Institute for Advanced Study, 2013.
     <https://homotopytypetheory.org/book/>
+*   <span id="ml1975"></span>
+    Per Martin-Löf.
+    "An intuitionistic theory of types: Predicative part."
+    Studies in Logic and the Foundations of Mathematics. Vol. 80. Elsevier, 1975. 73-118.
+    [doi:10.1016/S0049-237X(08)71945-1](https://doi.org/10.1016/S0049-237X(08)71945-1)
