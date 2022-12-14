@@ -55,6 +55,10 @@ Univalent Foundations は Martin-Löf の**依存型理論** [(Martin-Löf, 1975
 
 `n : {-2, -1, 0, ...}` に対して、型 `Truncated n A` を帰納的に `Truncated (-2) A := Contractible A` と `Truncated (n + 1) A := (x, y : A) -> Truncated n (x = y)` で定義します。例えば、 `Truncated (-1) A := (x, y : A) -> Contractible (x = y)` は任意の `x, y : A` に対して、ただ一つの `x` と `y` の同一視のしかたがあるとういこと、つまり `A` の要素は高々一つであることを表します。 `Truncated (-1) A` の要素がある時 `A` は従来の命題のようにふるまうため、 `IsProposition A := Truncated (-1) A` と書くこともあります。 `Truncated 0 A := (x, y : A) -> IsProposition (x = y)` は　`A` の要素の同一視の型 `x = y` が命題であること、つまり `A` は従来の集合のようにふるまうことを表します。そのため、 `IsSet A := Truncated 0 A` と書くこともあります。
 
+### 型の同値
+
+関数 `f : A -> B` に対して、型 `IsEquivalence f` を `(y : B) -> IsContractible ((x : A) * (f x = y))` と定義します。 `(x : A) * (f x = y)` の部分は `y` の `f` による逆像と読めるので、 `IsEquivalence f` は任意の `y : B` に対して `y` の `f` による逆像がただ一つの要素を持つことを表します。型 `A ≃ B` を `(f : A -> B) * IsEquivalence f` と定義します。
+
 ### Univalence
 
 `A : Type` と `a : A` を同じ記法で書いていますが、これは `Type` という記号は要素が型であるような型であるということです。正確には、 `Type` 自身が `Type` の要素であると矛盾が起こる (Girard のパラドックス) ので、 `Type 0 : Type 1 : Type 2 : ...` のように階層付けられています。単に `Type` と書いた時はいい感じに階数が補完されていると考えます。
