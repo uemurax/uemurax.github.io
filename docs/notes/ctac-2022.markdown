@@ -14,8 +14,8 @@ layout: default
 
 まずは圏の定義を確認しましょう。圏 `C` とは次の要素からなる構造です。
 
-*   対象のなす集合 `Obj C`
-*   対象 `x : Obj C` と `y : Obj C` に対し、射のなす集合 `Hom C x y`
+*   対象のなす集合 `Object C`
+*   対象 `x : Object C` と `y : Object C` に対し、射のなす集合 `Map C x y`
 *   恒等射、合成、単位律、結合律
 
 この定義は「正しい」でしょうか。もちろん正しいのですが、少し微妙な点があります。それは圏がどう**同一視**されるかです。圏に対しては少なくとも4つの同一視の概念が考えられます。
@@ -72,6 +72,20 @@ id-to-equiv A B : A = B -> A ≃ B
 univalence A B : IsEquivalence (id-to-equiv A B)
 ```
 を構成できます。
+
+## 「正しい」圏の定義
+
+Univalent Foundations で圏を定義します。素朴な定義は次のようになるでしょう。 **Wild category** を次の要素からなる構造 `C` であると定義します。
+
+*   `Object C : Type`
+*   `Map C : Object C -> Object C -> Type`
+*   `identity C : (x : Object C) -> Map C x x`
+*   `compose C : {x, y, z : Object C} -> Map C y z -> Map C x y -> Map C x z`
+*   `unit-left C : (x, y : Object C) (f : Map C x y) -> compose C (identity C y) f = f`
+*   `unit-right C : (x, y : Object C) (f : Map C x y) -> compose C f (identity C x) = f`
+*   `associativity C : (x y z w : Object C) (h : Map C z w) (g : Map C y z) (f : Map C x y) -> compose C (compose C h g) f = compose C h (compose C g h)`
+
+`compose C` の型において、波括弧 `{}` の中に書いた引数は他の引数の型から分かるので関数適用の際には省略しています。さて、 Univalent Foundations において注意すべきことは `a = b` は型であって複数の異なる要素を持ち得ることでした。となると、 `unit-left C` と `unit-right C` と `associativity C` は公理というよりは**構造の一部**であると考えられます。高次元圏論で見られるように、この手の構造がよくふるまうためには **coherence** も公理または構造として含める必要があるでしょう。この文書では普通の圏を考えているのでこの方面への深入りは避けます。
 
 ## 参考文献
 
