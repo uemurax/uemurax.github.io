@@ -51,13 +51,17 @@ Univalent Foundations は Martin-Löf の**依存型理論** [(Martin-Löf, 1975
 
 ### Truncation level
 
-型 `A` に対して、型 `Contractible A` を `(a : A) * ((x : A) -> a = x)` と定義します。これは元 `a : A` があって他のすべての元 `x : A` は `a` と同一視されることを表します。つまり、 `A` はただ一つの元を持つということです。 Contractible (可縮) という用語はホモトピー論から来ます。
+型 `A` に対して、型 `Contractible A` を `(a : A) * ((x : A) -> a = x)` と定義します。これは元 `a : A` があって他のすべての元 `x : A` は `a` と同一視されることを表します。つまり、 `A` はただ一つの元を持つということです。 `Contractible A` の元がある時、 `A` は**可縮 (contractible)**であると言います。
 
-`n : {-2, -1, 0, ...}` に対して、型 `Truncated n A` を帰納的に `Truncated (-2) A := Contractible A` と `Truncated (n + 1) A := (x, y : A) -> Truncated n (x = y)` で定義します。例えば、 `Truncated (-1) A := (x, y : A) -> Contractible (x = y)` は任意の `x, y : A` に対して、ただ一つの `x` と `y` の同一視のしかたがあるとういこと、つまり `A` の元は高々一つであることを表します。 `Truncated (-1) A` の元がある時 `A` は従来の命題のようにふるまうため、 `IsProposition A := Truncated (-1) A` と書くこともあります。 `Truncated 0 A := (x, y : A) -> IsProposition (x = y)` は `A` の元の同一視の型 `x = y` が命題であること、つまり `A` は従来の集合のようにふるまうことを表します。そのため、 `IsSet A := Truncated 0 A` と書くこともあります。
+`n : {-2, -1, 0, ...}` に対して、型 `Truncated n A` を帰納的に `Truncated (-2) A := Contractible A` と `Truncated (n + 1) A := (x, y : A) -> Truncated n (x = y)` で定義します。 `Truncated n A` の元がある時、 `A` は **`n`-truncated** であると言います。例えば、 `Truncated (-1) A := (x, y : A) -> Contractible (x = y)` は任意の `x, y : A` に対して、ただ一つの `x` と `y` の同一視のしかたがあるとういこと、つまり `A` の元は高々一つであることを表します。 `Truncated (-1) A` の元がある時 `A` は従来の命題のようにふるまうため、 `IsProposition A := Truncated (-1) A` と書き、 `IsProposition A` の元がある時 `A` は**命題 (proposition)** であると言うこともあります。 `Truncated 0 A := (x, y : A) -> IsProposition (x = y)` は `A` の元の同一視の型 `x = y` が命題であること、つまり `A` は従来の集合のようにふるまうことを表します。そのため、 `IsSet A := Truncated 0 A` と書き、 `IsSet A` の元がある時 `A` は**集合 (set)** であると言うこともあります。
+
+型 `A` と `n : {-2, -1, 0, ...}` に対して、 `A` の **`n`-truncation** という型 `Truncation n A` を構成できます。 `Truncation n` は端的には `n`-truncated な型のなす (∞, 1)-圏からすべての型のなす (∞, 1)-圏への包含関手の左随伴です。 `Truncation n A` は常に `n`-truncated であり、 `A` が既に `n`-truncated ならば同値 `A ≃ Truncation n A` を得ます。
+
+`(-1)`-truncation は特に **propositional truncation** と呼ばれます。 `Truncation (-1) A` の元は `A` の元が**存在する**ことだけを伝えてくれます。述語論理における量化子 `∃` の意味に近いです。定義から `Truncation (-1) A` の任意の2つの元は同一視されるので、存在するという `A` の元についての具体的な情報を取り出すことは一般にはできません。特に、一般には `Truncation (-1) A -> A` という関数を作る方法はありません。
 
 ### 型の同値
 
-関数 `f : A -> B` に対して、型 `IsEquivalence f` を `(y : B) -> IsContractible ((x : A) * (f x = y))` と定義します。 `(x : A) * (f x = y)` の部分は `y` の `f` による逆像と読めるので、 `IsEquivalence f` は任意の `y : B` に対して `y` の `f` による逆像がただ一つの元を持つことを表します。型 `A ≃ B` を `(f : A -> B) * IsEquivalence f` と定義します。
+関数 `f : A -> B` に対して、型 `IsEquivalence f` を `(y : B) -> Contractible ((x : A) * (f x = y))` と定義します。 `IsEquivalence f` の元がある時 `f` は**同値 (equivalence)** であると言います。 `(x : A) * (f x = y)` の部分は `y` の `f` による逆像と読めるので、 `IsEquivalence f` は任意の `y : B` に対して `y` の `f` による逆像がただ一つの元を持つことを表します。型 `A ≃ B` を `(f : A -> B) * IsEquivalence f` と定義します。
 
 ### Univalence
 
@@ -124,9 +128,9 @@ id-to-iso C x y : x = y -> x ≅ y
 ```
 (y : Object D) -> Truncation (-1) ((x : Object C) * (F x ≅ y))
 ```
-が元を持つことです。
+が元を持つことです。 `Truncation (-1)` を使っているので、 `y` の `F` による逆像に元が存在することは分かりますが、具体的に関数 `Object D -> Object C` を構成する方法は一般にはありません。
 
-`F` が圏同値なら弱圏同値であることは簡単に分かります。逆に、 `F` が弱圏同値であると仮定します。 `F` が充満忠実であることから、対象 `y : Object D` に対して、型 `((x : Object C) * (F x ≅ y))` の元は**同型を除いて高々一つ**であることが分かります。 `C` の univalence を使うと、対象の同型と標準的な同一視が同値になるので、 `((x : Object C) * (F x ≅ y))` の元は**高々一つ**であると言えます。つまり、 `((x : Object C) * (F x ≅ y))` は**既に命題**です。命題に対しては `Truncation (-1)` は何もしないので、 `F` が本質的全射という仮定から関数
+`F` が圏同値なら弱圏同値であることは簡単に分かります。逆に、 `F` が弱圏同値であると仮定します。 `F` が充満忠実であることから、対象 `y : Object D` に対して、型 `((x : Object C) * (F x ≅ y))` の元は**同型を除いて高々一つ**であることが分かります。 `C` の univalence を使うと、対象の同型と標準的な同一視が同値になるので、 `((x : Object C) * (F x ≅ y))` の元は**高々一つ**であると言えます。つまり、 `((x : Object C) * (F x ≅ y))` は**既に命題**です。命題 `P` に対しては同値 `P ≃ Truncation (-1) P` があるので、 `F` が本質的全射という仮定から関数
 ```
 (y : Object D) -> ((x : Object C) * (F x ≅ y))
 ```
