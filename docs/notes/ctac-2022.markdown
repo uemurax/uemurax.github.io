@@ -87,6 +87,8 @@ Univalent Foundations で圏を定義します。素朴な定義は次のよう�
 
 `compose C` の型において、波括弧 `{}` の中に書いた引数は他の引数の型から分かるので関数適用の際には省略しています。さて、 Univalent Foundations において注意すべきことは `a = b` は型であって複数の異なる要素を持ち得ることでした。となると、 `unit-left C` と `unit-right C` と `associativity C` は公理というよりは**構造の一部**であると考えられます。高次元圏論で見られるように、この手の構造がよくふるまうためには **coherence** も公理または構造として含める必要があるでしょう。この文書では普通の圏を考えているのでこの方面への深入りは避けます。
 
+普通の圏は Set-豊穣圏ですので、 `Map C` が集合に値をとるように制限するのが自然です。 Wild category `C` であって `(x, y : Object) -> IsSet (Map C x y)` が要素を持つようなものを**前圏 (precategory)** と呼びます。まだ圏ではありません。前圏 `C` に対しては、 `unit-left C` と `unit-right C` と `associativity C` は公理のようにふるまうので、 coherence は要りません。 `Object C` の truncation level を制限する必要性は見えないので特に条件は課しません。
+
 ## 参考文献
 
 *   <span id="aks2015"></span>
