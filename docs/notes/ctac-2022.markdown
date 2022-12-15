@@ -114,6 +114,10 @@ id-to-iso C x y : x = y -> x ≅ y
 
 依存対の型を繰り返し使って、元が圏であるような型 `Category` を構成できます。圏 `C, D : Category` に対して、同一視の型 `C = D` と `C` と `D` の間の圏同型のなす型は同値になります。これは `C` と `D` は前圏であっても成り立つことで、 Univalence Axiom からの帰結である **(higher) structure identity principle** [(Ahrens et al., 2020)](#anst2020) [(HoTT Book; 9.8節)](#hottbook) の一例です。
 
+### 圏同型と圏同値の同値性
+
+圏 `C, D : Category` に対して、 `C` と `D` の間の圏同型のなす型と `C` と `D` の間の圏同値のなす型は同値になります。これは圏において対象の同一視の型と同型の型が同値になるように圏を定義したからです。
+
 ## 参考文献
 
 *   <span id="aks2015"></span>
