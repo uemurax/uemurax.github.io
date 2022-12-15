@@ -8,7 +8,7 @@ layout: default
 
 ## 概要
 
-「正しい」圏の定義を紹介します。主に [(Ahrens et al., 2015)](#aks2015) と [(HoTT Book)](#hottbook) の9章の内容です。
+「正しい」圏の定義を紹介します。主に [(Ahrens et al., 2015)](#aks2015) と [(HoTT Book; 9章)](#hottbook) の内容です。
 
 ## はじめに
 
@@ -110,6 +110,10 @@ id-to-iso C x y : x = y -> x ≅ y
 ```
 の元を持つものと定義します。 Univalence Axiom と似たパターンなので、この条件は **univalence** と呼ばれます。また、(∞, 1)-圏のモデルの一つである complete Segal space [(Rezk, 2001)](#rezk2001) に類似の条件が課されるので、その提唱者に因んで **Rezk 条件** とも呼ばれます。
 
+### 標準的な同一視の概念と圏同型の同値性
+
+依存対の型を繰り返し使って、元が圏であるような型 `Category` を構成できます。圏 `C, D : Category` に対して、同一視の型 `C = D` と `C` と `D` の間の圏同型のなす型は同値になります。これは `C` と `D` は前圏であっても成り立つことで、 Univalence Axiom からの帰結である **(higher) structure identity principle** [(Ahrens et al., 2020)](#anst2020) [(HoTT Book; 9.8節)](#hottbook) の一例です。
+
 ## 参考文献
 
 *   <span id="aks2015"></span>
@@ -134,3 +138,9 @@ id-to-iso C x y : x = y -> x ≅ y
     Transactions of the American Mathematical Society 353.3 (2001): 973-1007.
     [doi:10.1090/S0002-9947-00-02653-2](https://doi.org/10.1090/S0002-9947-00-02653-2)
     [arXiv:math/9811037](https://arxiv.org/abs/math/9811037)
+*   <span id="anst2020"></span>
+    Benedikt Ahrens, Paige Randall North, Michael Shulman, and Dimitris Tsementzis.
+    "A higher structure identity principle."
+    Proceedings of the 35th Annual ACM/IEEE Symposium on Logic in Computer Science. 2020.
+    [doi:10.1145/3373718.3394755](https://doi.org/10.1145/3373718.3394755)
+    [arXiv:2004.06572](https://arxiv.org/abs/2004.06572)
