@@ -158,6 +158,14 @@ Object D -> Object C
 
 順序数 (整礎全順序集合) を対象、順序を保つ関数を射とする前圏は gaunt category です。これは順序数の間の順序同型は一意だからです。
 
+Gaunt category を対象、関手を射とする構造は圏になります。
+
+## 「正しい」けど圏にはならない例
+
+型を対象、関数を射とする構造を考えると、これは前圏にすらなりません。ただし、この構造は「正しい」 (∞, 1)-圏であると考えられます。ちなみに、 Univalent Foundations において (∞, 1)-圏の概念を定義できるかというと未解決です。
+
+圏を対象、関手を射とする構造を考えると、これは前圏にすらなりません。ただし、この構造は「正しい」 (2, 1)-圏になります。自然変換も含めて考えると「正しい」 (2, 2)-圏になります [Ahren et al., 2021](#afmvvdw2021)。
+
 ## 参考文献
 
 *   <span id="aks2015"></span>
@@ -194,3 +202,9 @@ Object D -> Object C
     Journal of the American Mathematical Society 34.4 (2021): 1011-1058.
     [doi:10.1090/jams/972](https://doi.org/10.1090/jams/972)
     [arXiv:1112.0040](https://arxiv.org/abs/1112.0040)
+*   <span id="afmvvdw2021"></span>
+    Benedikt Ahrens, Dan Frumin, Marco Maggesi, Niccolò Veltri, and Niels van der Weide.
+    "Bicategories in univalent foundations."
+    Mathematical Structures in Computer Science 31.10 (2021): 1232-1269.
+    [doi:10.1017/S0960129522000032](https://doi.org/10.1017/S0960129522000032)
+    [arXiv:1903.01152](https://arxiv.org/abs/1903.01152)
