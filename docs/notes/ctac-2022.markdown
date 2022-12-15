@@ -144,6 +144,20 @@ Object D -> Object C
 
 この証明のポイントは「同型を除いて一意に存在する」ことが univalence により「一意に存在する」に置き換わるという部分にあります。一意に存在するものに対しては当然関数を構成できるので選択公理は要りません。
 
+## 「正しい」圏の例
+
+集合のなす圏 `Set` は `Object Set := (A : Type) * IsSet A` と `Map Set (A, _) (B, _) := A -> B` で定義されます。 `Set` の univalence は Univalence Axiom から従います。
+
+前圏 `C` と `D` に対して、関手のなす前圏 `Fun C D` が自然に定義できます。 `D` が圏の時、 `Fun C D` は圏になります。特に、任意の前圏 `C` に対して、前層のなす圏 `PSh C := Fun (C ^op) Set` を得ます。
+
+任意の前圏 `C` に対して、米田埋め込み `C -> PSh C` の像は圏になります。このように得られる圏は `C` の **Rezk completion** と呼ばれます。この構成は端的には圏のなす (∞, 1)-圏から前圏のなす (∞, 1)-圏への包含関手の左随伴です。
+
+圏 `C` であって `Object C` が集合であるようなものは **gaunt category** [(Barwick and Schommer-Pries, 2021)](#bsp2021) と呼ばれたりします。対象 `x, y : Object C` に対して、 `x = y` が高々一つしか元を持たないので、 univalence から `x ≅ y` も高々一つしか元を持たず、また元を持つ時は必ず `x = y` の元から来ることが分かります。これは恒等射しか同型射がないことと同値です。
+
+順序集合は gaunt category です。
+
+順序数 (整礎全順序集合) を対象、順序を保つ関数を射とする前圏は gaunt category です。これは順序数の間の順序同型は一意だからです。
+
 ## 参考文献
 
 *   <span id="aks2015"></span>
@@ -174,3 +188,9 @@ Object D -> Object C
     Proceedings of the 35th Annual ACM/IEEE Symposium on Logic in Computer Science. 2020.
     [doi:10.1145/3373718.3394755](https://doi.org/10.1145/3373718.3394755)
     [arXiv:2004.06572](https://arxiv.org/abs/2004.06572)
+*   <span id="bsp2021"></span>
+    Clark Barwick and Christopher Schommer-Pries.
+    "On the unicity of the theory of higher categories."
+    Journal of the American Mathematical Society 34.4 (2021): 1011-1058.
+    [doi:10.1090/jams/972](https://doi.org/10.1090/jams/972)
+    [arXiv:1112.0040](https://arxiv.org/abs/1112.0040)
