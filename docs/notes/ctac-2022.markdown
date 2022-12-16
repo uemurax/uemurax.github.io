@@ -81,7 +81,7 @@ univalence A B : IsEquivalence (id-to-equiv A B)
 
 ## 「正しい」圏の定義
 
-Univalent Foundations で圏を定義します。素朴な定義は次のようになるでしょう。 **Wild category** を次の要素からなる構造 `C` であると定義します。
+Univalent Foundations で圏を定義します。素朴な定義は次のようになるでしょう。 **Wild precategory** を次の要素からなる構造 `C` であると定義します。
 
 *   `Object C : Type`
 *   `Map C : Object C -> Object C -> Type`
@@ -93,7 +93,7 @@ Univalent Foundations で圏を定義します。素朴な定義は次のよう�
 
 `compose C` の型において波括弧 `{}` の中に書いた引数は他の引数の型から分かるので関数適用の際には省略しています。さて、 Univalent Foundations において注意すべきことは `a = b` は型であって複数の異なる元を持ち得ることでした。となると、 `unit-left C` と `unit-right C` と `associativity C` は公理というよりは**構造の一部**であると考えられます。高次元圏論で見られるように、この手の構造がよくふるまうためには **coherence** も公理または構造として含める必要があるでしょう。この文書では普通の圏を考えているのでこの方面への深入りは避けます。
 
-普通の圏は Set-豊穣圏ですので、 `Map C` が集合に値をとるように制限するのが自然です。 Wild category `C` であって
+普通の圏は Set-豊穣圏ですので、 `Map C` が集合に値をとるように制限するのが自然です。 Wild precategory `C` であって
 ```
 (x, y : Object) -> IsSet (Map C x y)
 ```
@@ -164,7 +164,7 @@ Object D -> Object C
 
 Gaunt category を対象、関手を射とする構造は圏になります。
 
-型 `A` に対して、 **discrete wild category** `Δ A` を `Object (Δ A) := A` と `Map (Δ A) x y := (x = y)` で定義します。 `A` が 1-truncated な時 `Δ A` は圏になります。
+型 `A` に対して、 **discrete wild precategory** `Δ A` を `Object (Δ A) := A` と `Map (Δ A) x y := (x = y)` で定義します。 `A` が 1-truncated な時 `Δ A` は圏になります。
 
 ### 「正しい」けど圏にはならない例
 
