@@ -1,0 +1,234 @@
+---
+layout: default
+---
+
+# 「正しい」圏論
+
+この文書は[圏論 Advent Calendar 2022](https://adventar.org/calendars/7888)の17日目の記事です。
+
+## 概要
+
+「正しい」圏の定義を紹介します。主に [(Ahrens et al., 2015)](#aks2015) と [(HoTT Book; 9章)](#hottbook) の内容です。
+
+## はじめに
+
+まずは圏の定義を確認しましょう。圏 `C` とは次の要素からなる構造です。
+
+*   対象のなす集合 `Object C`
+*   対象 `x : Object C` と `y : Object C` に対し、射のなす集合 `Map C x y`
+*   恒等射、合成、単位律、結合律
+
+この定義は「正しい」でしょうか。もちろん正しいのですが、少し微妙な点があります。それは圏がどう**同一視**されるかです。圏に対しては少なくとも4つの同一視の概念が考えられます。
+
+1.  メタ理論における標準的な同一視の概念 (例えば集合論では集合としての等しさ)
+2.  代数構造としての同型 (圏同型)
+3.  圏同値 (合成が恒等関手と自然同型という意味で逆関手を持つ)
+4.  弱圏同値 (充満忠実かつ本質的全射)
+
+流石に集合としての等しさを論じることはないと思いますが、圏同型はしばしば登場します。群同型、環同型などから類推できる自然な概念です。「正しい」圏の同一視のしかたはもちろん圏同値です。圏同値と弱圏同値は同値ですが、それはあくまで定理なのでいったん区別しておきます。圏同値が「正しい」圏の同一視のしかたというのは、**あらゆる「圏論的」な構成は圏同値で不変**ということです。しかし、圏同値より強い同一視のしかたがあるということは、圏同値で不変でないような「圏論的」ではない構成もあるということです。理想としては「圏論的」な構成のみを使って「正しい」圏論をしたいところですが、現実では「圏論的」ではない構成も多用されています。 2-圏論とか。
+
+もう一つ微妙な点があります。圏同値と弱圏同値の同値性を示すには**選択公理**を使います。これは同型を除いて一意な対象を選択する必要があるからです。しかし、同型を除いてとはいえ**一意**な対象を選択するというは不自然な話です。また、具体的な圏同値を思い浮かべると、本質的全射の証明では具体的な**構成**が与えられることがほとんどです。圏論に選択公理が要るはずがありません。
+
+この文書では、上に挙げた4つの圏の同一視の概念が**すべて同値**になるような圏の定義を紹介します。メタ理論における標準的な同一視と圏同値が同値になるということは、**あらゆる構成が圏同値で不変**になります。何をしようが自動的に「正しい」ことが約束されます。また、この同値性は**構成的**に証明されます。もちろん選択公理は要りません。
+
+## メタ理論: Univalent Foundations
+
+この文書では **Univalent Foundations** [(HoTT Book)](#hottbook) をメタ理論として採用します。これは筆者の趣味というだけでなくこの文書において本質的です。というのも、例えば (公理的または素朴) 集合論においては圏同型と圏同値はそもそも同値ではありません。もっと言えば集合としての等しさと代数構造としての同型が同値になることはほぼありません。集合としての等しさは常に**命題**であり、元を高々1つしか持たない集合と考えられます。一方、代数構造としての同型は複数ありえます。この2つの概念を同値とみなすことを正当化することは等しさが常に命題であるようなメタ理論を採用する限り難しいと言えます。
+
+### 型
+
+Univalent Foundations は Martin-Löf の**依存型理論** [(Martin-Löf, 1975)](#ml1975) をベースとします。このメタ理論では数学は**型**やその**元**を**構成**することで営まれます。命題という概念は組み込まれていません (後で命題を特別な性質を持つ型として定義します)。型とは素朴な意味で集合に近い概念で、その元は集合の元のようなものです。 `A` が型であることは `A : Type` と書き、 `a` が型 `A` の元であることは `a : A` と書きます。型 `A` に対し、 **`A` 上の依存型**は `A` で添え字付けられた集合族のようなもので、 `B : A -> Type` のように書きます。型理論では型や元を構成する**規則**がいくつも与えられていて、以下で「構成できる」と書いた時はそれらの規則に則って構成できることを意味します。厳密な規則を列挙することはしませんが、直観的に構成できそうだと納得してもらえればと思います。
+
+### 同一視の型
+
+型 `A` とその元 `a : A` と `b : A` に対し、**同一視の型 (identity type)** `a = b` が構成できます。同一視の型は Univalent Foundations における**標準的な同一視の概念**です。もともとの気持ちは `a` と `b` が等しいという命題だったのですが、 Univalent Foundations の文脈では `a = b` の元は `a` と `b` の**同一視のしかた**と考えます。特に注意すべきこととして、普通の等式と違って **`a = b` は複数の異なる元を持つことがあります**。普通の等式と同様に、**あらゆる構成は同一視で不変です**。例えば関数 `f : A -> B` と `a : A` と `b : A` に対し、関数 `ap f : a = b -> f a = f b` を構成できます。
+
+### その他の型
+
+すでに言及しましたが、型 `A` と `B` に対して、**関数型** `A -> B` が構成できて、その元は関数です。関数 `f : A -> B` と元 `a : A` に対して、**関数適用**を `f a : B` のように括弧なしで書きます。 `->` は右結合 (`A -> B -> C := A -> (B -> C)`) で関数適用は左結合 (`f a b := (f a) b`) です。
+
+もっと一般に、依存型 `B : A -> Type` に対して、**依存関数型** `(x : A) -> B x` が構成できて、その元は `x : A` に対して `B x` の元を返す関数です。返り値の型が引数に依存するのでこのような関数は依存関数と呼ばれます。 `(x : A) (y : B x) -> C x y := (x : A) -> (y : B x) -> C x y` や `(x, y : A) -> B x y := (x : A) (y : A) -> B x y` のような略記を使います。
+
+型 `A` と `B` に対して、**対の型** `A * B` が構成できて、その元は `a : A` と `b : B` の対 `(a, b)` です。もっと一般に、依存型 `B : A -> Type` に対して、**依存対の型** `(x : A) * B x` が構成できて、その元は `a : A` と `b : B a` の対 `(a, b)` です。2番目の元の型が1番目の元に依存するのでこのような対は依存対と呼ばれます。
+
+### Truncation level
+
+型 `A` に対して、型 `Contractible A` を `(a : A) * ((x : A) -> a = x)` と定義します。これは元 `a : A` があって他のすべての元 `x : A` は `a` と同一視されることを表します。つまり、 `A` はただ一つの元を持つということです。 `Contractible A` の元がある時、 `A` は**可縮 (contractible)** であると言います。
+
+`n : {-2, -1, 0, ...}` に対して、型 `Truncated n A` を帰納的に `Truncated (-2) A := Contractible A` と `Truncated (n + 1) A := (x, y : A) -> Truncated n (x = y)` で定義します。 `Truncated n A` の元がある時、 `A` は **`n`-truncated** であると言います。例えば、 `Truncated (-1) A := (x, y : A) -> Contractible (x = y)` は任意の `x, y : A` に対して、ただ一つの `x` と `y` の同一視のしかたがあるとういこと、つまり `A` の元は高々一つであることを表します。 `Truncated (-1) A` の元がある時 `A` は従来の命題のようにふるまうため、 `IsProposition A := Truncated (-1) A` と書き、 `IsProposition A` の元がある時 `A` は**命題 (proposition)** であると言うこともあります。 `Truncated 0 A := (x, y : A) -> IsProposition (x = y)` は `A` の元の同一視の型 `x = y` が命題であること、つまり `A` は従来の集合のようにふるまうことを表します。そのため、 `IsSet A := Truncated 0 A` と書き、 `IsSet A` の元がある時 `A` は**集合 (set)** であると言うこともあります。
+
+型 `A` と `n : {-2, -1, 0, ...}` に対して、 `A` の **`n`-truncation** という型 `Truncation n A` を構成できます。 `Truncation n` は端的には `n`-truncated な型のなす (∞, 1)-圏からすべての型のなす (∞, 1)-圏への包含関手の左随伴です。 `Truncation n A` は常に `n`-truncated であり、 `A` が既に `n`-truncated ならば同値 `A ≃ Truncation n A` を構成できます。
+
+`(-1)`-truncation は特に **propositional truncation** と呼ばれます。 `Truncation (-1) A` の元は `A` の元が**存在する**ことだけを伝えてくれます。述語論理における量化子 `∃` の意味に近いです。定義から `Truncation (-1) A` の任意の2つの元は同一視されるので、存在するという `A` の元についての具体的な情報を取り出すことは一般にはできません。特に、一般には `Truncation (-1) A -> A` という関数を構成する方法はありません。
+
+### 型の同値
+
+関数 `f : A -> B` に対して、型 `IsEquivalence f` を `(y : B) -> Contractible ((x : A) * (f x = y))` と定義します。 `IsEquivalence f` の元がある時 `f` は**同値 (equivalence)** であると言います。 `(x : A) * (f x = y)` の部分は `y` の `f` による逆像と読めるので、 `IsEquivalence f` は任意の `y : B` に対して `y` の `f` による逆像がただ一つの元を持つことを表します。型 `A ≃ B` を `(f : A -> B) * IsEquivalence f` と定義します。
+
+### Univalence
+
+`A : Type` と `a : A` を同じ記法で書いていますが、これは `Type` という記号は元が型であるような型であるということです。正確には、 `Type` 自身が `Type` の元であると矛盾が起こる (Girard のパラドックス) ので、 `Type 0 : Type 1 : Type 2 : ...` のように階層付けられています。単に `Type` と書いた時はいい感じに階数が補完されていると考えます。
+
+さて、 `Type` が型ということは `A, B : Type` に対して同一視の型 `A = B` が構成できます。一方、 `A ≃ B` も自然な型の同一視の概念です。恒等関数は同値であることが示せるので、関数
+```
+id-to-equiv A B : A = B -> A ≃ B
+```
+を構成できます。 **Univalence Axiom** は `id-to-equiv A B` が同値であることを要請します。つまり、
+```
+univalence A B : IsEquivalence (id-to-equiv A B)
+```
+を構成できます。
+
+## 「正しい」圏の定義
+
+Univalent Foundations で圏を定義します。素朴な定義は次のようになるでしょう。 **Wild precategory** を次の要素からなる構造 `C` であると定義します。
+
+*   `Object C : Type`
+*   `Map C : Object C -> Object C -> Type`
+*   `identity C : (x : Object C) -> Map C x x`
+*   `compose C : {x, y, z : Object C} -> Map C y z -> Map C x y -> Map C x z`
+*   `unit-left C : (x, y : Object C) (f : Map C x y) -> compose C (identity C y) f = f`
+*   `unit-right C : (x, y : Object C) (f : Map C x y) -> compose C f (identity C x) = f`
+*   `associativity C : (x y z w : Object C) (h : Map C z w) (g : Map C y z) (f : Map C x y) -> compose C (compose C h g) f = compose C h (compose C g h)`
+
+`compose C` の型において波括弧 `{}` の中に書いた引数は他の引数の型から分かるので関数適用の際には省略しています。さて、 Univalent Foundations において注意すべきことは `a = b` は型であって複数の異なる元を持ち得ることでした。となると、 `unit-left C` と `unit-right C` と `associativity C` は公理というよりは**構造の一部**であると考えられます。高次元圏論で見られるように、この手の構造がよくふるまうためには **coherence** も公理または構造として含める必要があるでしょう。この文書では普通の圏を考えているのでこの方面への深入りは避けます。
+
+普通の圏は Set-豊穣圏ですので、 `Map C` が集合に値をとるように制限するのが自然です。 Wild precategory `C` であって
+```
+(x, y : Object) -> IsSet (Map C x y)
+```
+の元を持つようなものを**前圏 (precategory)** と呼びます。まだ圏ではありません。前圏 `C` に対しては、 `unit-left C` と `unit-right C` と `associativity C` は公理のようにふるまうので、 coherence は要りません。 `Object C` の truncation level を制限する必要性は見えないので特に条件は課しません。
+
+さて、そもそもなぜ圏同型と圏同値に差があるかと考えると、圏の対象の同一視の概念が
+
+*   メタ理論における標準的な同一視の概念
+*   同型
+
+の2種類あるからです。これは Univalent Foundations において前圏を上のように定義したところで同じことです。「正しい」圏の定義を得るには**この2つの同一視の概念が同値になる**ような条件を課すのが良いでしょう。
+
+前圏 `C` とその対象 `x, y : Object C` に対して、**同型射の型** `x ≅ y` は自然に定義されます。恒等射は同型射なので、関数
+```
+id-to-iso C x y : x = y -> x ≅ y
+```
+が構成できます。**圏**とは前圏 `C` であって
+```
+(x, y : Object C) -> IsEquivalence (id-to-iso C x y)
+```
+の元を持つものと定義します。 Univalence Axiom と似たパターンなので、この条件は **univalence** と呼ばれます。また、(∞, 1)-圏のモデルの一つである complete Segal space [(Rezk, 2001)](#rezk2001) に類似の条件が課されるので、その提唱者に因んで **Rezk 条件** とも呼ばれます。
+
+### 標準的な同一視の概念と圏同型の同値性
+
+依存対の型を繰り返し使って、元が圏であるような型 `Category` を構成できます。圏 `C, D : Category` に対して、同一視の型 `C = D` と `C` と `D` の間の圏同型のなす型は同値になります。これは `C` と `D` は前圏であっても成り立つことで、 Univalence Axiom からの帰結である **(higher) structure identity principle** [(Ahrens et al., 2020)](#anst2020) [(HoTT Book; 9.8節)](#hottbook) の一例です。
+
+### 圏同型と圏同値の同値性
+
+圏 `C, D : Category` に対して、 `C` と `D` の間の圏同型のなす型と `C` と `D` の間の圏同値のなす型は同値になります。これは圏において対象の同一視の型と同型の型が同値になるように圏を定義したからです。
+
+### 圏同値と弱圏同値の同値性
+
+圏 `C, D : Category` に対して、 `C` と `D` の間の圏同値のなす型と `C` と `D` の間の弱圏同値のなす型が同値になることを示します。関手 `F : C -> D` が**弱圏同値**であるとは `F` が充満忠実かつ本質的全射であることです。**充満忠実**は自然に定義されます。 `F` が**本質的全射**とは
+```
+(y : Object D) -> Truncation (-1) ((x : Object C) * (F x ≅ y))
+```
+が元を持つことです。 `Truncation (-1)` を使っているので、 `y` の `F` による逆像に元が存在することは分かりますが、具体的に関数 `Object D -> Object C` を構成する方法は一般にはありません。
+
+`F` が圏同値なら弱圏同値であることは簡単に分かります。逆に、 `F` が弱圏同値であると仮定します。 `F` が充満忠実であることから、対象 `y : Object D` に対して、型 `((x : Object C) * (F x ≅ y))` の元は**同型を除いて高々一つ**であることが分かります。 `C` の univalence を使うと、対象の同型と標準的な同一視が同値になるので、 `((x : Object C) * (F x ≅ y))` の元は**高々一つ**であると言えます。つまり、 `((x : Object C) * (F x ≅ y))` は**既に命題**です。命題 `P` に対しては同値 `P ≃ Truncation (-1) P` があるので、 `F` が本質的全射という仮定から関数
+```
+(y : Object D) -> ((x : Object C) * (F x ≅ y))
+```
+を構成できます。1番目の成分を取り出して、関数
+```
+Object D -> Object C
+```
+を構成できます。 `F` が充満忠実であることから、この関数は関手 `D -> C` に一意に拡張できて `F` の逆関手になることが分かり、 `F` は圏同値であることが示されます。
+
+この証明のポイントは「同型を除いて一意に存在する」ことが univalence により「一意に存在する」に置き換わるという部分にあります。一意に存在するものに対しては当然関数を構成できるので選択公理は要りません。
+
+## 例
+
+### 「正しい」圏の例
+
+集合のなす圏 `Set` は `Object Set := (A : Type) * IsSet A` と `Map Set (A, _) (B, _) := A -> B` で定義されます。 `Set` の univalence は Univalence Axiom から従います。
+
+前圏 `C` と `D` に対して、関手のなす前圏 `Fun C D` が自然に定義できます。 `D` が圏の時、 `Fun C D` は圏になります。特に、任意の前圏 `C` に対して、前層のなす圏 `PSh C := Fun (C ^op) Set` を得ます。
+
+圏の充満部分前圏は圏です。特に、任意の前圏 `C` に対して、米田埋め込み `C -> PSh C` の像は圏になります。このように得られる圏は `C` の **Rezk completion** と呼ばれます。この構成は端的には圏のなす (∞, 1)-圏から前圏のなす (∞, 1)-圏への包含関手の左随伴です。また、 `PSh C` の各種充満部分圏、例えば代数的理論のモデルの圏、 sketch のモデルの圏、 flat functor のなす圏などはちゃんと圏になります。
+
+圏のなす (2, 2)-圏における極限は自然に構成できます。例えば、圏 `C` 上のモナド `T` に対して、 `T`-代数のなす圏を得ます。圏の余直積は自然に構成できます。一般の余極限は前圏として余極限を取ったあと Rezk completion したものです。
+
+圏 `C` であって `Object C` が集合であるようなものは **gaunt category** [(Barwick and Schommer-Pries, 2021)](#bsp2021) と呼ばれることがあります。対象 `x, y : Object C` に対して、 `x = y` が高々一つしか元を持たないので、 univalence から `x ≅ y` も高々一つしか元を持たず、また元を持つ時は必ず `x = y` の元から来ることが分かります。これは恒等射しか同型射がないことと同値です。
+
+順序集合は gaunt category です。
+
+順序数 (整礎全順序集合) を対象、順序を保つ関数を射とする前圏は gaunt category です。これは順序数の間の順序同型は一意だからです。
+
+Gaunt category を対象、関手を射とする構造は圏になります。
+
+型 `A` に対して、 **discrete wild precategory** `Δ A` を `Object (Δ A) := A` と `Map (Δ A) x y := (x = y)` で定義します。 `A` が 1-truncated な時 `Δ A` は圏になります。
+
+### 「正しい」けど圏にはならない例
+
+型を対象、関数を射とする構造を考えると、これは前圏にすらなりません。ただし、この構造は「正しい」 (∞, 1)-圏であると考えられます。ちなみに、 Univalent Foundations においてうまいこと (∞, 1)-圏の概念を定義できるかというと未解決です。
+
+圏を対象、関手を射とする構造を考えると、これは前圏にすらなりません。ただし、この構造は「正しい」 (2, 1)-圏になります。自然変換も含めて考えると「正しい」 (2, 2)-圏になります [(Ahren et al., 2021)](#afmvvdw2021)。
+
+### 「正しくない」圏の例
+
+モノイドは対象の型が1点の前圏とみなすことができますが、単位元以外の可逆元がある場合には圏にはなりません。
+
+`T` を自由線形空間を取る `Set` 上のモナドとします。集合を対象、 `A -> T B` の形の関数を射とする前圏 (つまり `T` の Kleisli 「圏」) は圏にはなりません。この前圏における同型は線形空間の同型 `T A ≅ T B` なので集合の同型と一致せず、 univalence が満たされません。 Kleisli 圏は lax colimit なので、「正しい」ものを得るには Rezk completion する必要があります。
+
+型 `A` に対して、 **codiscrete precategory** `∇ A` を `Object (∇ A) := A` で任意の対象 `x, y : Object (∇ A)` に対して `Map (∇ A) x y` を1点と定義します。 `∇ A` は `A` が命題でない限り圏にはなりません。
+
+やや高次元圏の例になりますが、圏を対象、 profunctor を射とする構造を考えると、これは (2, 1)-圏にはなりません。 Profunctor の概念から誘導される同値の概念は圏の Cauchy 完備化の間の圏同値なので、 univalence が満たされません。対象を Cauchy 完備な圏に制限すれば (2, 1)-圏になります。同じ理由で、圏を対象、関手を垂直射、 profunctor を水平射とする double category も「正しい」とは言い難いです。
+
+## おわりに
+
+Univalent Foundations における正しい圏の定義を紹介しました。この定義の基で自然に考えられる圏の同一視の概念はすべて同値であることを見ました。また、その証明は構成的でした。圏の例と反例をいくつか見ました。
+
+教科書でもよく見るような例も「正しくない」方に分類されるのは興味深いですが、これはあくまで Univalent Foundations の観点からは正しくないということに過ぎません。圏の定義における univalence が約束するのはあらゆる構成は対象の同型で不変であること、あらゆる構成は圏同値で不変であることです。「正しくない」圏の例として挙げたものは (codiscrete precategory はちょっとよく分かりませんが) いずれも「正しい」同型の概念を得たいというよりは圏の結合的な代数としての側面を見ているように思えます。結合的な代数が興味深い対象であることは変わりません。
+
+用途にあった「正しい」圏の定義で「正しい」圏論ライフを送りましょう。
+
+## 参考文献
+
+*   <span id="aks2015"></span>
+    Benedikt Ahrens, Krzysztof Kapulkin, and Michael Shulman.
+    "Univalent categories and the Rezk completion."
+    Mathematical Structures in Computer Science 25.5 (2015): 1010-1039.
+    [doi:10.1017/S0960129514000486](https://doi.org/10.1017/S0960129514000486)
+    [arXiv:1303.0584](https://arxiv.org/abs/1303.0584)
+*   <span id="hottbook"></span>
+    The Univalent Foundations Program.
+    "Homotopy Type Theory: Univalent Foundations of Mathematics."
+    Institute for Advanced Study, 2013.
+    <https://homotopytypetheory.org/book/>
+*   <span id="ml1975"></span>
+    Per Martin-Löf.
+    "An intuitionistic theory of types: Predicative part."
+    Studies in Logic and the Foundations of Mathematics. Vol. 80. Elsevier, 1975. 73-118.
+    [doi:10.1016/S0049-237X(08)71945-1](https://doi.org/10.1016/S0049-237X(08)71945-1)
+*   <span id="rezk2001"></span>
+    Charles Rezk.
+    "A model for the homotopy theory of homotopy theory."
+    Transactions of the American Mathematical Society 353.3 (2001): 973-1007.
+    [doi:10.1090/S0002-9947-00-02653-2](https://doi.org/10.1090/S0002-9947-00-02653-2)
+    [arXiv:math/9811037](https://arxiv.org/abs/math/9811037)
+*   <span id="anst2020"></span>
+    Benedikt Ahrens, Paige Randall North, Michael Shulman, and Dimitris Tsementzis.
+    "A higher structure identity principle."
+    Proceedings of the 35th Annual ACM/IEEE Symposium on Logic in Computer Science. 2020.
+    [doi:10.1145/3373718.3394755](https://doi.org/10.1145/3373718.3394755)
+    [arXiv:2004.06572](https://arxiv.org/abs/2004.06572)
+*   <span id="bsp2021"></span>
+    Clark Barwick and Christopher Schommer-Pries.
+    "On the unicity of the theory of higher categories."
+    Journal of the American Mathematical Society 34.4 (2021): 1011-1058.
+    [doi:10.1090/jams/972](https://doi.org/10.1090/jams/972)
+    [arXiv:1112.0040](https://arxiv.org/abs/1112.0040)
+*   <span id="afmvvdw2021"></span>
+    Benedikt Ahrens, Dan Frumin, Marco Maggesi, Niccolò Veltri, and Niels van der Weide.
+    "Bicategories in univalent foundations."
+    Mathematical Structures in Computer Science 31.10 (2021): 1232-1269.
+    [doi:10.1017/S0960129522000032](https://doi.org/10.1017/S0960129522000032)
+    [arXiv:1903.01152](https://arxiv.org/abs/1903.01152)
