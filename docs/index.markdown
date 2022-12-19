@@ -65,6 +65,7 @@ Abstract and Concrete Type Theories.
 
 ## Notes ##
 
+*   [「正しい」圏論]({% link notes/ctac-2022.markdown %})
 *   [A characterization of open modalities in homotopy type theory](pdfs/characterization-of-open-modalities.pdf)
 *   [A universal property of the (∞, 1)-category of presentable (∞, 1)-categories](pdfs/universal-property-of-pr.pdf)
     Notes for the talk presented at [PSSL 106](http://www.math.muni.cz/~bourkej/PSSL106.html).
