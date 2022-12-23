@@ -39,6 +39,9 @@ I am also interested in type theory in general and pure category theory.
 
 ## Preprints ##
 
+*   Normalization and coherence for ∞-type theories.
+    2022.
+    [arXiv:2212.11764](https://arxiv.org/abs/2212.11764)
 *   Homotopy type theory as internal languages of diagrams of ∞-logoses.
     2022.
     [arXiv:2212.02444](https://arxiv.org/abs/2212.02444)
