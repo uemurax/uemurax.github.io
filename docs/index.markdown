@@ -79,6 +79,9 @@ Abstract and Concrete Type Theories.
 
 # Talks #
 
+*   Normalization and coherence for ∞-type theories.
+    Invited talk at [The 8th KTGU Mathematics Workshop for Young Researchers](https://www.math.kyoto-u.ac.jp/workshop/ktgu_yr/8thWorkshop/),
+    January 30, 2023, Kyoto.
 *   Internal languages of diagrams of ∞-toposes.
     Invited talk at [Workshop on Homotopy Type Theory/ Univalent Foundations](https://hott-uf.github.io/2022/),
     July 31, 2022, Haifa.
