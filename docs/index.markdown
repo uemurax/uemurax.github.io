@@ -67,8 +67,11 @@ Abstract and Concrete Type Theories.
 [pdf](https://eprints.illc.uva.nl/id/document/12150)
 [UvA DARE](https://hdl.handle.net/11245.1/41ff0b60-64d4-4003-8182-c244a9afab3b)
 
-## Notes ##
+## Other documents ##
 
+*   [ホモトピー型理論](https://uemurax.github.io/hott-ja/index.html)
+    ホモトピー型理論についての日本語文書。
+    ほぼほぼ工事中。
 *   [「正しい」圏論]({% link notes/ctac-2022.markdown %})
 *   [A characterization of open modalities in homotopy type theory](pdfs/characterization-of-open-modalities.pdf)
 *   [A universal property of the (∞, 1)-category of presentable (∞, 1)-categories](pdfs/universal-property-of-pr.pdf)
