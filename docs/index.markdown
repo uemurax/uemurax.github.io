@@ -65,6 +65,7 @@ Abstract and Concrete Type Theories.
 9 July, 2021.
 [abstract](https://www.illc.uva.nl/cms/publication/5287?showAbstract=1)
 [pdf](https://eprints.illc.uva.nl/id/document/12150)
+[UvA DARE](https://hdl.handle.net/11245.1/41ff0b60-64d4-4003-8182-c244a9afab3b)
 
 ## Notes ##
 
