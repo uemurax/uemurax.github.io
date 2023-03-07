@@ -142,6 +142,10 @@ Abstract and Concrete Type Theories.
     [International Conference on Homotopy Type Theory (HoTT 2019)](https://hott.github.io/HoTT-2019/),
     August 12--17, 2019, Pittsburgh, USA.
 
+# Activities #
+
+*   Part of organizers of [Workshop on Homotopy Type Theory/ Univalent Foundations 2023](https://hott-uf.github.io/2023/)
+
 # Contact #
 
 See my [profile](https://www.su.se/profiles/taue1805-1.565619)
