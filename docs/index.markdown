@@ -132,9 +132,9 @@ Abstract and Concrete Type Theories.
         June 18-21, 2018, Braga, Portugal.
         [slides](https://www.dropbox.com/sh/shr2fpv4r08pvj0/AABcV-C_-uUXsqO6Z95DSVLYa/Jun18?dl=0&preview=Uemura(abstract%25233).pdf)
 *   Fibred Fibration Categories.
-    [Workshop on Homotopy Type Theory / Univalent Foundations](http://hott-uf.gforge.inria.fr/),
+    Workshop on Homotopy Type Theory / Univalent Foundations,
     June 25–26, 2016, Porto, Portugal.
-    [slides](http://hott-uf.gforge.inria.fr/taichi.pdf)
+    [slides](pdfs/hott-uf-2016-slides.pdf)
 
 # Awards #
 
