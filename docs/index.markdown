@@ -30,7 +30,7 @@ I am also interested in type theory in general and pure category theory.
     2019.
     [doi:10.4230/LIPICS.TYPES.2018.7](https://dx.doi.org/10.4230/LIPICS.TYPES.2018.7)
 *   Fibred Fibration Categories.
-    [32nd Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)](http://lics.rwth-aachen.de/lics17/),
+    [32nd Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)](https://lics.siglog.org/lics17/),
     2017.
     [doi:10.1109/LICS.2017.8005084](http://dx.doi.org/10.1109/LICS.2017.8005084)
     [arXiv:1602.08206](https://arxiv.org/abs/1602.08206)
