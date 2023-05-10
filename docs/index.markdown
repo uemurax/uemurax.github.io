@@ -91,6 +91,7 @@ Abstract and Concrete Type Theories.
 *   Towards modular proof of normalization for type theories.
     [EuroProofNet WG6 meeting](https://europroofnet.github.io/wg6-vienna/),
     April 24--25, 2023, Vienna.
+    [slides](pdfs/wg6-2023-04-slides.pdf)
 *   Normalization and coherence for ∞-type theories.
     Invited talk at [The 8th KTGU Mathematics Workshop for Young Researchers](https://www.math.kyoto-u.ac.jp/workshop/ktgu_yr/8thWorkshop/),
     January 30, 2023, Kyoto.
