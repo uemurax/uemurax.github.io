@@ -17,6 +17,10 @@ I am also interested in type theory in general and pure category theory.
 
 ## Publications ##
 
+*   Homotopy type theory as internal languages of diagrams of ∞-logoses.
+    To appear in [8th International Conference on Formal Structures for Computation and Deduction (FSCD 2023)](https://easyconferences.eu/fscd2023/),
+    2023.
+    This is a short version of [arXiv:2212.02444][].
 *   On Church's Thesis in Cubical Assemblies (joint with [Andrew Swan][andrew_swan]).
     Mathematical Structures in Computer Science,
     2022.
@@ -44,7 +48,7 @@ I am also interested in type theory in general and pure category theory.
     [arXiv:2212.11764](https://arxiv.org/abs/2212.11764)
 *   Homotopy type theory as internal languages of diagrams of ∞-logoses.
     2022.
-    [arXiv:2212.02444](https://arxiv.org/abs/2212.02444)
+    [arXiv:2212.02444][]
 *   ∞-type theories (joint with [Hoang Kim Nguyen][hoang_kim_nguyen]).
     2022.
     [arXiv:2205.00798](https://arxiv.org/abs/2205.00798)
@@ -56,6 +60,7 @@ I am also interested in type theory in general and pure category theory.
     [arXiv:1701.07937](https://arxiv.org/abs/1701.07937)
 
 [hoang_kim_nguyen]: https://hk-nguyen-math.github.io/
+[arXiv:2212.02444]: https://arxiv.org/abs/2212.02444
 
 ## PhD Thesis ##
 
