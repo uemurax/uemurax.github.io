@@ -39,7 +39,7 @@ I am also interested in type theory in general and pure category theory.
     [doi:10.1109/LICS.2017.8005084](http://dx.doi.org/10.1109/LICS.2017.8005084)
     [arXiv:1602.08206](https://arxiv.org/abs/1602.08206)
 
-[andrew_swan]: https://sites.google.com/site/wakelinswan/
+[andrew_swan]: https://awswan.github.io/
 
 ## Preprints ##
 
