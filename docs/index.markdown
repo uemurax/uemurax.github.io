@@ -18,8 +18,9 @@ I am also interested in type theory in general and pure category theory.
 ## Publications ##
 
 *   Homotopy type theory as internal languages of diagrams of ∞-logoses.
-    To appear in [8th International Conference on Formal Structures for Computation and Deduction (FSCD 2023)](https://easyconferences.eu/fscd2023/),
+    [8th International Conference on Formal Structures for Computation and Deduction (FSCD 2023)](https://easyconferences.eu/fscd2023/),
     2023.
+    [doi:10.4230/LIPIcs.FSCD.2023.5](https://dx.doi.org/10.4230/LIPIcs.FSCD.2023.5)
     This is a short version of [arXiv:2212.02444][].
 *   On Church's Thesis in Cubical Assemblies (joint with [Andrew Swan][andrew_swan]).
     Mathematical Structures in Computer Science,
