@@ -90,6 +90,10 @@ Abstract and Concrete Type Theories.
 
 # Talks #
 
+*   Homotopy type theory as internal languages of diagrams of ∞-logoses.
+    [8th International Conference on Formal Structures for Computation and Deduction (FSCD 2023)][fscd2023],
+    July 4, 2023, Roma.
+    [slides](pdfs/fscd-2023-slides.pdf)
 *   Towards modular proof of normalization for type theories.
     [EuroProofNet WG6 meeting](https://europroofnet.github.io/wg6-vienna/),
     April 24--25, 2023, Vienna.
@@ -153,7 +157,7 @@ Abstract and Concrete Type Theories.
 
 *   Best Paper Award by Junior Researchers at
     [FSCD 2023][fscd2023],
-    July 3--6, 2023, Rome, Italy.
+    July 3--6, 2023, Roma, Italy.
 *   Best Student Paper Award at
     [HoTT 2019][hott2019],
     August 12--17, 2019, Pittsburgh, USA.
