@@ -18,7 +18,7 @@ I am also interested in type theory in general and pure category theory.
 ## Publications ##
 
 *   Homotopy type theory as internal languages of diagrams of ∞-logoses.
-    [8th International Conference on Formal Structures for Computation and Deduction (FSCD 2023)](fscd2023),
+    [8th International Conference on Formal Structures for Computation and Deduction (FSCD 2023)][fscd2023],
     2023.
     [doi:10.4230/LIPIcs.FSCD.2023.5](https://dx.doi.org/10.4230/LIPIcs.FSCD.2023.5)
     This is a short version of [arXiv:2212.02444][].
@@ -127,7 +127,7 @@ Abstract and Concrete Type Theories.
     Invited talk at [HoTT-UF](https://cas.oslo.no/hott-uf/),
     June 13, 2019, Oslo, Norway.
 *   A General Framework for the Semantics of Type Theory.
-    *   [International Conference on Homotopy Type Theory (HoTT 2019)](https://hott.github.io/HoTT-2019/),
+    *   [International Conference on Homotopy Type Theory (HoTT 2019)][hott2019],
         August 16, 2019, Pittsburgh, USA.
         [slides](https://hott.github.io/HoTT-2019//conf-slides/Uemura.pdf)
     *   [Category Theory 2019](http://conferences.inf.ed.ac.uk/ct2019/),
@@ -147,12 +147,15 @@ Abstract and Concrete Type Theories.
     June 25–26, 2016, Porto, Portugal.
     [slides](pdfs/hott-uf-2016-slides.pdf)
 
+[hott2019]: https://hott.github.io/HoTT-2019/
+
 # Awards #
 
 *   Best Paper Award by Junior Researchers at
-    [FSCD 2023](fscd2023).
+    [FSCD 2023][fscd2023],
+    July 3--6, 2023, Rome, Italy.
 *   Best Student Paper Award at
-    [International Conference on Homotopy Type Theory (HoTT 2019)](https://hott.github.io/HoTT-2019/),
+    [HoTT 2019][hott2019],
     August 12--17, 2019, Pittsburgh, USA.
 
 # Activities #
