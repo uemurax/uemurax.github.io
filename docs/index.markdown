@@ -18,7 +18,7 @@ I am also interested in type theory in general and pure category theory.
 ## Publications ##
 
 *   Homotopy type theory as internal languages of diagrams of ∞-logoses.
-    [8th International Conference on Formal Structures for Computation and Deduction (FSCD 2023)](https://easyconferences.eu/fscd2023/),
+    [8th International Conference on Formal Structures for Computation and Deduction (FSCD 2023)](fscd2023),
     2023.
     [doi:10.4230/LIPIcs.FSCD.2023.5](https://dx.doi.org/10.4230/LIPIcs.FSCD.2023.5)
     This is a short version of [arXiv:2212.02444][].
@@ -41,6 +41,7 @@ I am also interested in type theory in general and pure category theory.
     [arXiv:1602.08206](https://arxiv.org/abs/1602.08206)
 
 [andrew_swan]: https://awswan.github.io/
+[fscd2023]: https://easyconferences.eu/fscd2023/
 
 ## Preprints ##
 
@@ -148,6 +149,8 @@ Abstract and Concrete Type Theories.
 
 # Awards #
 
+*   Best Paper Award by Junior Researchers at
+    [FSCD 2023](fscd2023).
 *   Best Student Paper Award at
     [International Conference on Homotopy Type Theory (HoTT 2019)](https://hott.github.io/HoTT-2019/),
     August 12--17, 2019, Pittsburgh, USA.
