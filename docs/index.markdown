@@ -25,24 +25,24 @@ I am also interested in type theory in general and pure category theory.
 *   Homotopy type theory as internal languages of diagrams of ∞-logoses.
     [8th International Conference on Formal Structures for Computation and Deduction (FSCD 2023)][fscd2023],
     2023.
-    [doi:10.4230/LIPIcs.FSCD.2023.5](https://dx.doi.org/10.4230/LIPIcs.FSCD.2023.5)
+    [doi:10.4230/LIPIcs.FSCD.2023.5](https://doi.org/10.4230/LIPIcs.FSCD.2023.5)
     This is a short version of [arXiv:2212.02444][].
 *   On Church's Thesis in Cubical Assemblies (joint with [Andrew Swan][andrew_swan]).
     Mathematical Structures in Computer Science,
     2022.
-    [doi:10.1017/S0960129522000068](https://dx.doi.org/10.1017/S0960129522000068)
+    [doi:10.1017/S0960129522000068](https://doi.org/10.1017/S0960129522000068)
 *   The universal exponentiable arrow.
     Journal of Pure and Applied Algebra,
     Volume 226, Issue 7, 2022.
-    [doi:10.1016/j.jpaa.2021.106991](https://dx.doi.org/10.1016/j.jpaa.2021.106991)
+    [doi:10.1016/j.jpaa.2021.106991](https://doi.org/10.1016/j.jpaa.2021.106991)
 *   Cubical Assemblies, a Univalent and Impredicative Universe and a Failure of Propositional Resizing.
     [24th International Conference on Types for Proofs and Programs (TYPES 2018)](https://types2018.projj.eu/),
     2019.
-    [doi:10.4230/LIPICS.TYPES.2018.7](https://dx.doi.org/10.4230/LIPICS.TYPES.2018.7)
+    [doi:10.4230/LIPICS.TYPES.2018.7](https://doi.org/10.4230/LIPICS.TYPES.2018.7)
 *   Fibred Fibration Categories.
     [32nd Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)](https://lics.siglog.org/lics17/),
     2017.
-    [doi:10.1109/LICS.2017.8005084](http://dx.doi.org/10.1109/LICS.2017.8005084)
+    [doi:10.1109/LICS.2017.8005084](http://doi.org/10.1109/LICS.2017.8005084)
     [arXiv:1602.08206](https://arxiv.org/abs/1602.08206)
 
 [andrew_swan]: https://awswan.github.io/
