@@ -17,6 +17,11 @@ I am also interested in type theory in general and pure category theory.
 
 ## Publications ##
 
+*   A General Framework for the Semantics of Type Theory.
+    Mathematical Structures in Computer Science,
+    2023.
+    [doi:10.1017/S0960129523000208](https://doi.org/10.1017/S0960129523000208)
+    [arXiv:1904.04097](https://arxiv.org/abs/1904.04097)
 *   Homotopy type theory as internal languages of diagrams of ∞-logoses.
     [8th International Conference on Formal Structures for Computation and Deduction (FSCD 2023)][fscd2023],
     2023.
@@ -54,9 +59,6 @@ I am also interested in type theory in general and pure category theory.
 *   ∞-type theories (joint with [Hoang Kim Nguyen][hoang_kim_nguyen]).
     2022.
     [arXiv:2205.00798](https://arxiv.org/abs/2205.00798)
-*   A General Framework for the Semantics of Type Theory.
-    2019.
-    [arXiv:1904.04097](https://arxiv.org/abs/1904.04097)
 *   Homotopies for Free!
     2017.
     [arXiv:1701.07937](https://arxiv.org/abs/1701.07937)
