@@ -5,13 +5,7 @@
 layout: home
 ---
 
-I am a postdoc at the
-[Department of Mathematics](https://www.su.se/matematiska-institutionen/)
-at [Stockholm University](https://www.su.se/).
-My main research interests are in
-[Homotopy Type Theory](https://homotopytypetheory.org/),
-in particular its semantics using (higher) category theory.
-I am also interested in type theory in general and pure category theory.
+I do type theory and category theory, I mean ∞-ones.
 
 # Papers #
 
@@ -167,8 +161,3 @@ Abstract and Concrete Type Theories.
 # Activities #
 
 *   Part of organizers of [Workshop on Homotopy Type Theory/ Univalent Foundations 2023](https://hott-uf.github.io/2023/)
-
-# Contact #
-
-See my [profile](https://www.su.se/profiles/taue1805-1.565619)
-at the university site.

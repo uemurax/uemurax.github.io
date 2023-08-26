@@ -21,7 +21,7 @@
 title: Taichi Uemura
 email: t.uemura00@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Taichi Uemura is a researcher on type theory and category theory.
+  Taichi Uemura does type theory and category theory.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: t_uemura669101
