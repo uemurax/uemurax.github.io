@@ -72,6 +72,7 @@ Abstract and Concrete Type Theories.
 
 ## Other documents ##
 
+*   [Synthetic topos theory](https://uemurax.github.io/synthetic-topos-theory/)
 *   [ホモトピー型理論](https://uemurax.github.io/hott-ja/index.html)
     ホモトピー型理論についての日本語文書。
     ほぼほぼ工事中。
