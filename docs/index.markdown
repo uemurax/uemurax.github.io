@@ -162,3 +162,8 @@ Abstract and Concrete Type Theories.
 # Activities #
 
 *   Part of organizers of [Workshop on Homotopy Type Theory/ Univalent Foundations 2023](https://hott-uf.github.io/2023/)
+
+# SNS accounts #
+
+* GitHub: [uemurax](https://github.com/uemurax)
+* Mastodon: <a rel="me" href="https://mathtod.online/@tuemura">@tuemura@mathtod.online</a>
