@@ -167,3 +167,5 @@ Abstract and Concrete Type Theories.
 
 * GitHub: [uemurax](https://github.com/uemurax)
 * Mastodon: <a rel="me" href="https://mathtod.online/@tuemura">@tuemura@mathtod.online</a>
+* Twitter: [t_uemura669101](https://twitter.com/t_uemura669101)
+* Kaggle: [taichiuemura](https://www.kaggle.com/taichiuemura)
