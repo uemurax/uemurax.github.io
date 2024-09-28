@@ -27,7 +27,7 @@ computer science.
 *   Homotopy type theory as internal languages of diagrams of ∞-logoses.
     [8th International Conference on Formal Structures for Computation and Deduction (FSCD 2023)][fscd2023],
     2023.
-    [doi:10.4230/LIPIcs.FSCD.2023.5](https://doi.org/10.4230/LIPIcs.FSCD.2023.5)
+    [doi:10.4230/LIPIcs.FSCD.2023.5][fscd2023paper]
     This is a short version of [arXiv:2212.02444][].
 *   On Church's Thesis in Cubical Assemblies (joint with [Andrew Swan][andrew_swan]).
     Mathematical Structures in Computer Science,
@@ -49,6 +49,7 @@ computer science.
 
 [andrew_swan]: https://awswan.github.io/
 [fscd2023]: https://easyconferences.eu/fscd2023/
+[fscd2023paper]: https://doi.org/10.4230/LIPIcs.FSCD.2023.5
 
 ## Preprints ##
 
@@ -58,6 +59,7 @@ computer science.
 *   Homotopy type theory as internal languages of diagrams of ∞-logoses.
     2022.
     [arXiv:2212.02444][]
+    This is an extended version of the [FSCD 2023 paper][fscd2023paper].
 *   ∞-type theories (joint with [Hoang Kim Nguyen][hoang_kim_nguyen]).
     2022.
     [arXiv:2205.00798](https://arxiv.org/abs/2205.00798)
