@@ -53,6 +53,9 @@ computer science.
 
 ## Preprints ##
 
+*   Higher inductive types in (∞,1)-categories.
+    2024.
+    [arXiv:2410.17615](https://arxiv.org/abs/2410.17615)
 *   Normalization and coherence for ∞-type theories.
     2022.
     [arXiv:2212.11764](https://arxiv.org/abs/2212.11764)
