@@ -85,10 +85,11 @@ Abstract and Concrete Type Theories.
 
 ## Other documents ##
 
-*   [Synthetic topos theory](https://uemurax.github.io/synthetic-topos-theory/)
+*   [Synthetic topos theory](https://uemurax.github.io/synthetic-topos-theory/).
+    Under construction.
 *   [ホモトピー型理論](https://uemurax.github.io/hott-ja/index.html)
     ホモトピー型理論についての日本語文書。
-    ほぼほぼ工事中。
+    書きかけ。
 *   [「正しい」圏論]({% link notes/ctac-2022.markdown %})
 *   [A characterization of open modalities in homotopy type theory](pdfs/characterization-of-open-modalities.pdf)
 *   [A universal property of the (∞, 1)-category of presentable (∞, 1)-categories](pdfs/universal-property-of-pr.pdf)
