@@ -102,9 +102,12 @@ Abstract and Concrete Type Theories.
 # Talks #
 
 *   An elementary definition of opetopic sets.
-    [Kyoto Category Theory Meeting](https://sites.google.com/view/kyoto-category-theory-meeting),
-    February 12, 2025, Kyoto.
-    [slides](pdfs/kyoto-ct-2025-slides.pdf)
+    *   [Kyoto Category Theory Meeting](https://sites.google.com/view/kyoto-category-theory-meeting),
+        February 12, 2025, Kyoto.
+        [slides](pdfs/kyoto-ct-2025-slides.pdf)
+    *   [CSCAT 2025](https://hisashi-aratake.gitlab.io/event/cscat2025.html),
+        March 10, 2025, Kumamoto.
+        [slides](https://hisashi-aratake.gitlab.io/event/CSCAT2025/uemura.pdf)
 *   Homotopy type theory as internal languages of diagrams of ∞-logoses.
     [8th International Conference on Formal Structures for Computation and Deduction (FSCD 2023)][fscd2023],
     July 4, 2023, Roma.
