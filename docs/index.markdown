@@ -101,6 +101,14 @@ Abstract and Concrete Type Theories.
 
 # Talks #
 
+*   Homotopy Type TheoryとCubical Type Theory.
+    東北大学コンピュータサイエンス研究会講演会,
+    2025年3月21日, 仙台.
+    [slides](pdfs/tohoku-2025-03-slides.pdf)
+*   ホモトピー型理論とUnivalent Foundations入門.
+    [ロジックウィンタースクールIII](https://sites.google.com/view/logic-winter-school-iii/),
+    2025年2月17--21日, 和光.
+    [slides](https://drive.google.com/file/d/1o-blCeXWVgaDinh9RHpfaBB4XDCn7xNH/view?usp=sharing)
 *   An elementary definition of opetopic sets.
     *   [Kyoto Category Theory Meeting](https://sites.google.com/view/kyoto-category-theory-meeting),
         February 12, 2025, Kyoto.
@@ -108,6 +116,9 @@ Abstract and Concrete Type Theories.
     *   [CSCAT 2025](https://hisashi-aratake.gitlab.io/event/cscat2025.html),
         March 10, 2025, Kumamoto.
         [slides](https://hisashi-aratake.gitlab.io/event/CSCAT2025/uemura.pdf)
+*   Higher inductive types in (∞,1)-categories.
+    [Workshop on Categorical Structures and Computer Science (2024 Edition)](https://docs.google.com/document/d/1fZP9JS-MFcKsb146XVBKlK07oq-EnGH1HwClxiX52Go/edit?tab=t.0#heading=h.lntg56ljm653),
+    November 1, 2024, Kyoto.
 *   Homotopy type theory as internal languages of diagrams of ∞-logoses.
     [8th International Conference on Formal Structures for Computation and Deduction (FSCD 2023)][fscd2023],
     July 4, 2023, Roma.
