@@ -53,6 +53,9 @@ computer science.
 
 ## Preprints ##
 
+*   An elementary definition of opetopic sets.
+    2025.
+    [arXiv:2504.14935](https://arxiv.org/abs/2504.14935)
 *   Higher inductive types in (∞,1)-categories.
     2024.
     [arXiv:2410.17615](https://arxiv.org/abs/2410.17615)
