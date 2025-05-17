@@ -202,6 +202,7 @@ Abstract and Concrete Type Theories.
 
 * ORCID: [0000-0003-4930-1384](https://orcid.org/0000-0003-4930-1384)
 * GitHub: [uemurax](https://github.com/uemurax)
+* mixi2: [@tuemura](https://mixi.social/@tuemura)
 * Mastodon: <a rel="me" href="https://mathtod.online/@tuemura">@tuemura@mathtod.online</a>
 * Twitter: [t_uemura669101](https://twitter.com/t_uemura669101)
 * Kaggle: [taichiuemura](https://www.kaggle.com/taichiuemura)
