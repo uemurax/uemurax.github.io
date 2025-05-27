@@ -19,6 +19,10 @@ computer science.
 
 ## Publications ##
 
+*   ∞-type theories (joint with [Hoang Kim Nguyen][hoang_kim_nguyen]).
+    Higher Structures,
+    Volume 9, Issue 1, 2025.
+    [pdf](https://higher-structures.math.cas.cz/api/files/issues/Vol9Iss1/NguyenUemura)
 *   A General Framework for the Semantics of Type Theory.
     Mathematical Structures in Computer Science,
     2023.
@@ -66,9 +70,6 @@ computer science.
     2022.
     [arXiv:2212.02444][]
     This is an extended version of the [FSCD 2023 paper][fscd2023paper].
-*   ∞-type theories (joint with [Hoang Kim Nguyen][hoang_kim_nguyen]).
-    2022.
-    [arXiv:2205.00798](https://arxiv.org/abs/2205.00798)
 *   Homotopies for Free!
     2017.
     [arXiv:1701.07937](https://arxiv.org/abs/1701.07937)
