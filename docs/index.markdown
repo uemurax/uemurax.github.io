@@ -57,6 +57,9 @@ computer science.
 
 ## Preprints ##
 
+*   Colimits in the ∞-category of ∞-topoi and étale morphisms.
+    2025.
+    [arXiv:2506.10431](https://arxiv.org/abs/2506.10431)
 *   An elementary definition of opetopic sets.
     2025.
     [arXiv:2504.14935](https://arxiv.org/abs/2504.14935)
