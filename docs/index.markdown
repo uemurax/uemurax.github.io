@@ -19,10 +19,14 @@ computer science.
 
 ## Publications ##
 
+*   Tripos and Topos Theory for Fuzzy Logic: Baaz Δ Translation as Lawvere-Tierney Cotopology and Higher-Order Hyperdoctrinal Completion (joint with [Yoshihiro Maruyama](https://sites.google.com/view/yoshi-maruyama/), Satoshi Nakata, Takeo Uramoto, and Arisa Yasuda).
+    [2025 IEEE International Conference on Fuzzy Systems (FUZZ)](https://fuzzieee2025.conf.lip6.fr/),
+    2025.
+    [doi:10.1109/FUZZ62266.2025.11152210](https://doi.org/10.1109/FUZZ62266.2025.11152210)
 *   ∞-type theories (joint with [Hoang Kim Nguyen][hoang_kim_nguyen]).
     Higher Structures,
     Volume 9, Issue 1, 2025.
-    [pdf](https://higher-structures.math.cas.cz/api/files/issues/Vol9Iss1/NguyenUemura)
+    [doi:10.21136/HS.2025.04](https://doi.org/10.21136/HS.2025.04)
 *   A General Framework for the Semantics of Type Theory.
     Mathematical Structures in Computer Science,
     2023.
@@ -108,6 +112,9 @@ Abstract and Concrete Type Theories.
 
 # Talks #
 
+*   ホモトピー型理論，Cubical Type Theory，および，Cubical Agda.
+    [PPLサマースクール2025](http://ppl.jssst.or.jp/index.php?ss2025),
+    2025年9月2日, 東京.
 *   Homotopy Type TheoryとCubical Type Theory.
     東北大学コンピュータサイエンス研究会講演会,
     2025年3月21日, 仙台.
