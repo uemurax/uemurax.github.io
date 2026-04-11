@@ -5,15 +5,7 @@
 layout: home
 ---
 
-I do type theory and category theory, I mean ∞-ones.
-I am currently a 特任助教 at [School of Informatics](https://www.i.nagoya-u.ac.jp/), [Nagoya University](https://www.nagoya-u.ac.jp/).
-My research interests are
-homotopy type theory,
-category theory,
-type theory,
-logic,
-and
-computer science.
+I like type theory and category theory.
 
 # Papers #
 
