@@ -11,6 +11,15 @@ I like type theory and category theory.
 
 ## Publications ##
 
+*   Homotopy type theory as a language for diagrams of ∞-logoses.
+    Logical Methods in Computer Science,
+    Volume 22, Issue 1, 2026.
+    [doi:10.46298/lmcs-22(1:25)2026](https://doi.org/10.46298/lmcs-22(1:25)2026)
+    This is an extended version of the [FSCD 2023 paper][fscd2023paper].
+*   A direct-categorical approach to opetopic sets and opetopes.
+    Theory and Applications of Categories,
+    Volume 45, Number 6, 2026.
+    <http://www.tac.mta.ca/tac/volumes/45/6/45-06abs.html>
 *   Tripos and Topos Theory for Fuzzy Logic: Baaz Δ Translation as Lawvere-Tierney Cotopology and Higher-Order Hyperdoctrinal Completion (joint with [Yoshihiro Maruyama](https://sites.google.com/view/yoshi-maruyama/), Satoshi Nakata, Takeo Uramoto, and Arisa Yasuda).
     [2025 IEEE International Conference on Fuzzy Systems (FUZZ)](https://fuzzieee2025.conf.lip6.fr/),
     2025.
@@ -56,19 +65,12 @@ I like type theory and category theory.
 *   Colimits in the ∞-category of ∞-topoi and étale morphisms.
     2025.
     [arXiv:2506.10431](https://arxiv.org/abs/2506.10431)
-*   An elementary definition of opetopic sets.
-    2025.
-    [arXiv:2504.14935](https://arxiv.org/abs/2504.14935)
 *   Higher inductive types in (∞,1)-categories.
     2024.
     [arXiv:2410.17615](https://arxiv.org/abs/2410.17615)
 *   Normalization and coherence for ∞-type theories.
     2022.
     [arXiv:2212.11764](https://arxiv.org/abs/2212.11764)
-*   Homotopy type theory as internal languages of diagrams of ∞-logoses.
-    2022.
-    [arXiv:2212.02444][]
-    This is an extended version of the [FSCD 2023 paper][fscd2023paper].
 *   Homotopies for Free!
     2017.
     [arXiv:1701.07937](https://arxiv.org/abs/1701.07937)
